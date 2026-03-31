@@ -24,18 +24,28 @@ useEffect(() => {
           to boost your productivity and creativity.
         </p>
 
-  <div className='space-x-2 '>
-    <button onClick={()=>setSelectedType("available")}
-    className={`btn rounded-4xl ${selectedType=== "available" ? 
-     " bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] text-white":
-     "btn-outline text-black " } rounded-4xl w-20  text-white px-3 py-1 text-xs shadow`}>Products</button>
+  <div className='space-x-2 flex justify-center '>
+   <button 
+            onClick={() => setSelectedType("available")}
+            className={`btn rounded-4xl px-8 py-3 text-sm font-medium shadow transition-all
+                ${selectedType === "available" 
+                    ? "bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] text-white" 
+                    : "bg-white text-gray-700 border-2 border-gray-300 hover:border-gray-400"
+                }`}
+        >
+            Products
+        </button>
 
-  <button onClick={()=>setSelectedType("selected")} 
-   className={`btn rounded-4xl ${selectedType=== "selected" ? 
-    " bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] text-white":"btn-outline text-black" } 
-    rounded-4xl w-20  text- px-3 py-1 text-xs shadow`}
-    >
-      Cart({selectedProducts.length})</button>
+        <button 
+            onClick={() => setSelectedType("selected")}
+            className={`btn rounded-4xl px-8 py-3 text-sm font-medium shadow transition-all
+                ${selectedType === "selected" 
+                    ? "bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] text-white" 
+                    : "bg-white text-gray-700 border-2 border-gray-300 hover:border-gray-400"
+                }`}
+        >
+            Cart ({selectedProducts.length})
+        </button>
    
     </div> 
 </div>

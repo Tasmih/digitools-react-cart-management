@@ -8,10 +8,12 @@ const Rating = () => {
                     <h3 className='text-[60px] font font-extrabold'>50K+</h3>
                     <p className='text-[24px] font-medium'>ActiveUsers</p>
                     </div>
+                      <div className="divider divider-horizontal"></div>
                      <div>
                     <h3 className='text-[60px] font font-extrabold'>200+</h3>
                     <p className='text-[24px] font-medium'>Premium Tools</p>
                     </div>
+                      <div className="divider divider-horizontal"></div>
                      <div>
                     <h3 className='text-[60px] font font-extrabold'>4.9</h3>
                     <p className='text-[24px] font-medium'>Rating</p>

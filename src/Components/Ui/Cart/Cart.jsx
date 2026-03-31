@@ -42,7 +42,7 @@ const Cart = ({cart,selectedProducts,setSelectedProducts}) => {
             className={`btn btn-active rounded-4xl text-white w-full 
             ${isAdded 
             ? 'bg-green-500 cursor-not-allowed'   //button  color will trun green when clicked
-             : 'bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] hover:from-[#6b55ff] hover:to-[#9c8fff]' // initial blue
+             : 'bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] hover:from-[#6b55ff] hover:to-[#9c8fff]' 
             }`}
 >
   {isAdded ? 'Added to Cart' : 'Buy Now'}
