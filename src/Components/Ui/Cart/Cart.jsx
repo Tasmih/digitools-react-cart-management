@@ -7,6 +7,7 @@ const Cart = ({cart,selectedProducts,setSelectedProducts}) => {
           if (!isAdded) {
       setSelectedProducts([...selectedProducts, cart]) // selected added
       setIsAdded(true); // btn disable
+      alert (`${cart.name} added to cart!`)
     }
     }
     return (

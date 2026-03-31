@@ -4,8 +4,9 @@ import cartImg from '../../../../assets/shopping-cart.png'
 const SelectedCart = ({ selectedProducts, setSelectedProducts }) => {
     
     const handleRemove = (id) => {
-        const updated = selectedProducts.filter(item => item.id !== id);
-        setSelectedProducts(updated);
+        const removedProduct = selectedProducts.find(item => item.id === id);
+    setSelectedProducts(selectedProducts.filter(item => item.id !== id));
+    alert (`${removedProduct.name} removed from cart`);
     };
 
     
