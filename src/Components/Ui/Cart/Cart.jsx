@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import checkImg from '../../../assets/shopping-cart.png'
+import { toast } from 'react-toastify';
 
 const Cart = ({cart,selectedProducts,setSelectedProducts}) => {
     const [isAdded,setIsAdded ] = useState(false);
@@ -7,7 +8,8 @@ const Cart = ({cart,selectedProducts,setSelectedProducts}) => {
           if (!isAdded) {
       setSelectedProducts([...selectedProducts, cart]) // selected added
       setIsAdded(true); // btn disable
-      alert (`${cart.name} added to cart!`)
+      
+      toast.success (`${cart.name} added to cart!`)
     }
     }
     return (
