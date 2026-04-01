@@ -27,13 +27,14 @@ function App() {
     <Navbar quantity={quantity}/>
     <Banner/>
     <Rating/>
-    <Suspense fallback =<span className="loading loading-spinner loading-xl"></span>>
-        <Carts 
-        CartsPromise={CartsPromise} 
-        setQuantity={setQuantity}
-        selectedProducts={selectedProducts}
-        setSelectedProducts={setSelectedProducts}/>
-    </Suspense>
+   <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+  <Carts 
+    CartsPromise={CartsPromise} 
+    setQuantity={setQuantity}
+    selectedProducts={selectedProducts}
+    setSelectedProducts={setSelectedProducts}
+  />
+</Suspense>
     <StepSection/>
     <PricingSection/>
     <ReadyToStart/>
