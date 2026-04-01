@@ -15,7 +15,7 @@ const Banner = () => {
             New: AI-Powered Tools Available
           </button>
 
-          <h2 className='text-[#101727] text-3xl md:text-[72px] font-bold leading-snug md:leading-tight'>
+          <h2 className='text-[#101727] text-2xl md:text-[72px] font-bold leading-snug md:leading-tight'>
             Supercharge Your <br className='hidden md:block' /> Digital Workflow
           </h2>
 

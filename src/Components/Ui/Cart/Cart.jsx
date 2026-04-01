@@ -14,7 +14,7 @@ const Cart = ({cart,selectedProducts,setSelectedProducts}) => {
     }
     return (
         <div>
-            <div className='border rounded-lg border-gray-200 p-2 shadow-sm relative space-y-2 h-full w-full'>
+            <div className='flex flex-col border rounded-lg border-gray-200 p-2 shadow-sm relative space-y-2 h-full w-full'>
                 <button className= {`btn rounded-2xl text-left absolute top-5 right-5
                 ${cart.tag==="best seller" ? 'bg-[#fef3c6] text-[#bb4d00]'
                 : cart.tag==="popular" ? 'bg-[#e1e7ff] text-[#4f39f6]'
@@ -39,7 +39,7 @@ const Cart = ({cart,selectedProducts,setSelectedProducts}) => {
  <button
             onClick= {handleAddedCart}
             disabled={isAdded}
-            className={`btn btn-active rounded-4xl text-white w-full 
+            className={` mt-auto  btn btn-active rounded-4xl text-white w-full 
             ${isAdded 
             ? 'bg-green-500 cursor-not-allowed'   //button  color will trun green when clicked
              : 'bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] hover:from-[#6b55ff] hover:to-[#9c8fff]' 

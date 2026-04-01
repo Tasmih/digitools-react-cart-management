@@ -71,7 +71,7 @@ const SelectedCart = ({ selectedProducts, setSelectedProducts }) => {
                             </div>
                         </div>
 
-                        {/* Remove Button */}
+                        
                         <button 
                             onClick={() => handleRemove(product.id)}
                             className='btn btn-sm bg-red-500 hover:bg-red-600 text-white px-8 py-2 
