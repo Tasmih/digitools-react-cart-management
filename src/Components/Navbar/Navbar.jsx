@@ -13,6 +13,7 @@ const Navbar = ({quantity}) => {
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Testimonials</a></li>
                 <li><a href="">FAQ</a></li>
+             
             </ul>
             <div className='flex gap-4 items-center'>
                 <div className=''>

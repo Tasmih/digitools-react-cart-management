@@ -5,6 +5,10 @@ import Carts from './Components/Navbar/Main/Carts/Carts';
 import Rating from './Components/Navbar/Main/Rating/Rating'
 import Navbar from './Components/Navbar/Navbar'
 import { ToastContainer } from 'react-toastify';
+import StepSection from './Components/StepSection/StepSection';
+import PricingSection from './Components/PricingSection/PricingSection';
+import ReadyToStart from './Components/ReadyToStart/ReadyToStart';
+import FooterSection from './Components/FooterSection/FooterSection';
 
 
 const fetchCart = async()=>{
@@ -30,6 +34,10 @@ function App() {
         selectedProducts={selectedProducts}
         setSelectedProducts={setSelectedProducts}/>
     </Suspense>
+    <StepSection/>
+    <PricingSection/>
+    <ReadyToStart/>
+    <FooterSection/>
     <ToastContainer/>
     </>
   )

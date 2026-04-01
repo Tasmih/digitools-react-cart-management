@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import checkImg from '../../../assets/shopping-cart.png'
+import checkImg from '../../../assets/Check.png'
 import { toast } from 'react-toastify';
 
 const Cart = ({cart,selectedProducts,setSelectedProducts}) => {
